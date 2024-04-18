@@ -1,0 +1,33 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.pinpad {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.pinpad .pins {
+  display: grid;
+  grid-template-rows: repeat(100, 1fr);
+  grid-template-columns: repeat(100, 1fr);
+  gap: 0.05em;
+}
+
+.pinpad .pins .pin {
+  font-size: 0.35em;
+  padding: 0;
+  border: 0;
+  aspect-ratio: 3 / 2;
+  background-color: lightgray;
+}
+
+.go {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 5em;
+  background-color: lightgreen;
+  border: solid blue 0.1em;
+}
